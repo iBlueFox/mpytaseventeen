@@ -980,10 +980,7 @@ break
                                     id: 'sc'
                                 }
                             }]
-                      fatihgans = fs.readFileSync('./FotoMenu/Gempy.jpg')
-                      let txt = `「 Broadcast Bot 」\n\n${text}`
-                      hermanChnl.send5ButImg(i, txt, hermanChnl.user.name, fatihgans, btn)
-                    }
+                          }
                 m.reply(`Sukses Mengirim Broadcast Ke ${anu.length} Group`)
             }
             break
@@ -1020,7 +1017,7 @@ break
                                     id: 'sc'
                                 }
                             }]
-                      fatihgans = fs.readFileSync('./FotoMenu/Gempy.jpg')
+                      
                       let txt = `「 Broadcast Bot 」\n\n${text}`
                       hermanChnl.send5ButImg(yoi, txt, hermanChnl.user.name, fatihgans, btn)
 		}
@@ -2758,7 +2755,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 
 
 P E N T A B O T V17 R E L E A S E`
-                let message = await prepareWAMessageMedia({ image: fs.readFileSync('./FotoMenu/Gempy.jpg') }, { upload: hermanChnl.waUploadToServer })
+                
                 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     templateMessage: {
                         hydratedTemplate: {
